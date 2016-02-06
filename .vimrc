@@ -82,12 +82,6 @@ set paste
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" plugin for RST syntax highlighting
-Plugin 'Rykka/riv.vim'
-let g:riv_fold_auto_update = 0
-set nofoldenable
-let g:riv_global_leader = '<C-e>'
-
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
