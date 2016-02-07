@@ -2,9 +2,15 @@
 " ------------------------------------------------------------
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
-set t_Co=256
-color wombat256mod
-syntax on                       " turns syntax highlighting on
+
+
+" Solarized colors
+" -------------------------------------------------------------
+syntax enable
+set background=dark
+colorscheme solarized
+
+set t_Co=16
 
 " before writing to any file, this function call will remove any extra white space at the end of a line
 " au! BufWrite,FileWritePre * call RemoveWhiteSpace()
