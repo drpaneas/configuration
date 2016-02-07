@@ -7,10 +7,10 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " Solarized colors
 " -------------------------------------------------------------
 syntax enable
+set t_Co=256
+let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
-
-set t_Co=16
 
 " before writing to any file, this function call will remove any extra white space at the end of a line
 " au! BufWrite,FileWritePre * call RemoveWhiteSpace()
